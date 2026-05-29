@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>THE CLIMB </title>
+    <meta name="description" content="Elite mindset training. Discipline over motivation. Become unstoppable.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-text">
+            <span>T</span><span>H</span><span>E</span> <span>C</span><span>L</span><span>I</span><span>M</span><span>B</span>
+        </div>
+        <div class="loader-progress">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span>T</span><span>H</span><span>E</span> <span>C</span><span>L</span><span>I</span><span>M</span><span>B</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#mindset">MINDSET</a>
+                <a href="#performance">PERFORMANCE</a>
+                <a href="#stories">STORIES</a>
+            </div>
+            <button class="nav-cta">START NOW</button>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#home">HOME</a>
+            <a href="#mindset">MINDSET</a>
+            <a href="#performance">PERFORMANCE</a>
+            <a href="#stories">STORIES</a>
+            <button class="mobile-cta">START NOW</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <canvas class="hero-canvas" id="heroCanvas"></canvas>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-badge">EST. 2026</div>
+                <h1 class="hero-title">
+                    <span class="title-line">THE</span>
+                    <span class="title-line title-climb">CLIMB</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span>NO EXCUSES.</span>
+                    <span>NO SHORTCUTS.</span>
+                </div>
+                <button class="hero-cta">
+                    START NOW
+
+        </section>
+
+        <!-- Athlete Mindset Section -->
+        <section id="mindset" class="mindset">
+            <div class="mindset-container">
+                <div class="mindset-text">
+                    <div class="section-label">ATHLETE MINDSET</div>
+                    <h2 class="mindset-title">
+                        DISCIPLINE
+                        <span class="accent-text">BEATS</span>
+                        MOTIVATION
+                    </h2>
+                    <p class="mindset-desc">Motivation fades. Discipline stays. Every champion you've ever seen was built on the anvil of relentless consistency. Your feelings don't matter. Your actions do.</p>
+                    <div class="mindset-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">99%</div>
+                            <div class="stat-label">Mental Toughness</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Grind Mentality</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mindset-image">
+                    <div class="image-overlay"></div>
+                    <div class="image-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Cards Section -->
+        <section id="performance" class="cards-section">
+            <div class="cards-container">
+                <h2 class="cards-section-title">BUILT FOR <span class="accent-text">GREATNESS</span></h2>
+                <div class="cards-grid">
+                    <div class="card" data-card="Strength">
+                        <div class="card-icon"><i class="fas fa-dumbbell"></i></div>
+                        <h3>STRENGTH</h3>
+                        <p>Forge an unbreakable body and mind.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card" data-card="Focus">
+                        <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                        <h3>FOCUS</h3>
+                        <p>Lock in. Block the noise. Execute.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card" data-card="Endurance">
+                        <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>ENDURANCE</h3>
+                        <p>Outlast everyone. Never break.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card" data-card="Sacrifice">
+                        <div class="card-icon"><i class="fas fa-fire"></i></div>
+                        <h3>SACRIFICE</h3>
+                        <p>Give up comfort. Gain everything.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card" data-card="Consistency">
+                        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>CONSISTENCY</h3>
+                        <p>Show up. Every single day.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card" data-card="Vision">
+                        <div class="card-icon"><i class="fas fa-eye"></i></div>
+                        <h3>VISION</h3>
+                        <p>See the summit. Claim it.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cinematic Banner -->
+        <section class="cinematic-banner">
+            <div class="banner-bg parallax-bg"></div>
+            <div class="banner-content">
+                <div class="banner-quote">
+                    <span class="quote-line">"PAIN</span>
+                    <span class="quote-line accent-text">BUILDS</span>
+                    <span class="quote-line">CHAMPIONS."</span>
+                </div>
+                <div class="banner-sub">Embrace the suck. Grow through what you go through.</div>
+            </div>
+        </section>
+
+        <!-- Training Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <h2>YOUR <span class="accent-text">METRICS</span></h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>MENTAL TOUGHNESS</span>
+                            <span class="stat-percent" id="stat1">0%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" data-target="90"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>PHYSICAL STRENGTH</span>
+                            <span class="stat-percent" id="stat2">0%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" data-target="95"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>KNOWLEDGE</span>
+                            <span class="stat-percent" id="stat3">0%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" data-target="88"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>CONFIDENCE</span>
+                            <span class="stat-percent" id="stat4">0%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" data-target="94"></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <span>DISCIPLINE</span>
+                            <span class="stat-percent" id="stat5">0%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div class="progress-fill" data-target="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Motion Showcase - Horizontal Scroll -->
+        <section class="showcase">
+            <div class="showcase-title">
+                <h2>THE <span class="accent-text">JOURNEY</span></h2>
+            </div>
+            <div class="horizontal-scroll">
+                <div class="scroll-track">
+                    <div class="showcase-card">
+                        <div class="showcase-media"></div>
+                        <div class="showcase-info">
+                            <h3>WAKE UP</h3>
+                            <p>4:30 AM. The world sleeps. You rise.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-media"></div>
+                        <div class="showcase-info">
+                            <h3>GRIND</h3>
+                            <p>Put in the work when no one watches.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-media"></div>
+                        <div class="showcase-info">
+                            <h3>OVERCOME</h3>
+                            <p>Break through every wall.</p>
+                        </div>
+                    </div>
+                    <div class="showcase-card">
+                        <div class="showcase-media"></div>
+                        <div class="showcase-info">
+                            <h3>CONQUER</h3>
+                            <p>Stand at the summit. Alone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="stories" class="testimonials">
+            <div class="testimonials-container">
+                <h2>VOICES FROM THE <span class="accent-text">SUMMIT</span></h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-icon"><i class="fas fa-quote-right"></i></div>
+                        <p>"THE CLIMB rewired my brain. From quitting everything to finishing a marathon. Unreal transformation."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div>
+                                <h4>MARCUS THOMPSON</h4>
+                                <span>ELITE ATHLETE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-icon"><i class="fas fa-quote-right"></i></div>
+                        <p>"Discipline isn't born. It's built. Every day. This movement gave me the framework."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div>
+                                <h4>SARAH CHEN</h4>
+                                <span>CEO, UNBREAKABLE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-icon"><i class="fas fa-quote-right"></i></div>
+                        <p>"I was comfortable. Now I'm unstoppable. The climb never ends, and that's the beauty."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"></div>
+                            <div>
+                                <h4>DAVID OKAFOR</h4>
+                                <span>NAVY SEAL (RET.)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Motivation CTA -->
+        <section class="final-cta">
+            <div class="final-overlay"></div>
+            <div class="final-content">
+                <h2 class="final-title">
+                    <span>KEEP</span>
+                    <span class="accent-text">CLIMBING.</span>
+                </h2>
+                <p class="final-sub">The strongest version of you is waiting at the top.</p>
+                <button class="final-button">ENTER THE NEXT LEVEL <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">THE CLIMB</div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">PRIVACY</a>
+                <a href="#">TERMS</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="footer-copyright">© 2026 THE CLIMB. NO EXCUSES.</div>
+        </div>
+    </footer>
+
+    <button class="move-up-btn" id="moveUpBtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
